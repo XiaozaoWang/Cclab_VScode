@@ -24,3 +24,14 @@ canvas {
   z-index: -1; 
   /* always in the bottom */
 }
+
+#p5-container {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  z-index: -1; 
+}
