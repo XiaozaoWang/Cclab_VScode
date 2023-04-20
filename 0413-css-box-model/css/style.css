@@ -1,0 +1,67 @@
+#emoji {
+    color: red;
+    font-size: xx-large;
+}
+
+body {
+    background-color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* height: 100%; */
+}
+
+.box {
+    /* width: 200px; */
+    /* height: 150px; */
+    /* width: 50%; */
+    background-color: azure;
+    margin: 20px;
+    padding: 10px;
+    border: 5px;
+    border-style: double;
+}
+
+.small-title,
+p,
+body {
+    margin: 20px;
+}
+
+.small-title {
+    background-color: aquamarine;
+    text-align: center;
+    border: 3px solid;
+    /* solid is a style. thickness & style */
+}
+
+.document-title {
+    margin: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+#special-box {
+    background-color: yellow;
+    /* display: none; */
+    /* visibility: hidden; */
+    position: fixed;
+    /* wow */
+    right: 0%;
+    bottom: 0%;
+    width: 250px;
+}
+
+.flexbox-container {
+    display: flex;
+
+    flex-wrap: wrap;
+}

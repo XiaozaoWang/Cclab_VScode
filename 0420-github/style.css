@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  /* we can have multiple canvas */
+}
+
+.title-text {
+  color: aliceblue;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  /* how to put in absolute absolute position? */
+}
+
+#p5-canvas {
+  position: absolute;
+  top: 100px;
+  z-index: -1; 
+  /* always in the bottom */
+}

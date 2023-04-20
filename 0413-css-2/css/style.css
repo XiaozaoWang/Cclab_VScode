@@ -1,0 +1,23 @@
+h1 {
+    color: blue;
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    background-color: red;
+
+}
+
+#t1 {
+    color:aqua;
+    font-weight: 900;
+}
+
+#t2 {
+    color:yellow;
+}
+
+.content1 {
+    color:white;
+}
+

@@ -1,0 +1,16 @@
+html, body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  position: absolute;
+  /* left: calc(50% - 200px);
+  top: calc(50% - 200px); */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* transform: within the content (50%,50%)
+  Which means: go back by 50% of the 50% */
+}
