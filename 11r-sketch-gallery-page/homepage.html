@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,500;0,600;0,700;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/homepage.css">
+
+    <!-- import the libraries -->
+    <script src="lib/p5.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <h1 class="CCLab-logo"><span class="red">C</span>reative <span class="green">C</span>oding <span
+                class="blue">L</span>ab</h1>
+
+        <h1 class="title">✌️Pacey's Sketch Gallery✌️</h1>
+    </div>
+
+    <img id="cat1" src="cat.png" alt="cat">
+    <img id="cat2" src="cat.png" alt="cat">
+    <img id="cat3" src="cat.png" alt="cat">
+    <img id="cat4" src="cat.png" alt="cat">
+
+
+
+    <div class="flexbox-container">
+        <div class="box">
+            <!-- content -->
+            <h1 class="small-title"> <a href="genesis.html">Genesis</a></h1>
+            <p id="emoji">
+                <a href="genesis.html">
+                    <img src="genesis.png" alt="genesis">
+                </a>
+
+            </p>
+        </div>
+
+        <div class="box" id="special-box">
+            <!-- content -->
+            <h1 class="small-title">🐚🎶</h1>
+            <p id="special-box-text">
+                Hi! Please leave your name here so I know you came! <br>
+                <input type="text" id="myInput" name="myInput">
+                <button onclick="storeInput()">Submit</button>
+            </p>
+            <p>Still working on this part😭</p>
+        </div>
+
+        <script>
+            function storeInput() {
+                // Get the value of the input box
+                var inputVal = document.getElementById("myInput").value;
+                // Do something with the input value, such as store it in a variable or use it for further processing
+                console.log(inputVal);
+            }
+        </script>
+
+        <div class="box">
+            <!-- content -->
+            <h1 class="small-title">To come!</h1>
+            <p id="emoji">ψ(｀∇´)ψ ψ(｀∇´)ψ ψ(｀∇´)ψ </p>
+        </div>
+
+        <div class="box">
+            <!-- content -->
+            <h1 class="small-title">Cclab!</h1>
+            <p id="emoji">ψ(｀∇´)ψ ψ(｀∇´)ψ ψ(｀∇´)ψ </p>
+        </div>
+
+        <div class="box">
+            <!-- content -->
+            <h1 class="small-title">Cclab!</h1>
+            <p id="emoji">ψ(｀∇´)ψ ψ(｀∇´)ψ ψ(｀∇´)ψ </p>
+        </div>
+
+        <div class="box">
+            <!-- content -->
+            <h1 class="small-title">Cclab!</h1>
+            <p id="emoji">ψ(｀∇´)ψ ψ(｀∇´)ψ ψ(｀∇´)ψ </p>
+        </div>
+
+        <div class="box">
+            <!-- content -->
+            <h1 class="small-title">Cclab!</h1>
+            <p id="emoji">ψ(｀∇´)ψ ψ(｀∇´)ψ ψ(｀∇´)ψ </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

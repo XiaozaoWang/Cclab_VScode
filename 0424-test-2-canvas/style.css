@@ -1,0 +1,15 @@
+canvas {
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+#canvas1 {
+    float: left;
+}
+
+#canvas2 {
+    float: right;
+}

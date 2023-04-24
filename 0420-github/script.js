@@ -2,9 +2,11 @@
 let buttons = [];
 
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight);// actually creates HTML item
-  canvas.id("p5-container");
-  createCanvas(400, 400);
+
+  let canvas = createCanvas(400, 400);// actually creates HTML item
+  //canvas.id("p5-container");
+  canvas.parent("p5-container");
+  // createCanvas(400, 400);
 }
 
 function draw() {
