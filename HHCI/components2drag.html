@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+
+  <!-- link the styles -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- import the libraries -->
+  <script src="lib/p5.js"></script>
+  <script src="lib/p5.sound.js"></script>
+
+  <!-- import my script (it is deferred!) -->
+  <script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+  <div class="bar">
+    <h1 class="HHCI">HHCI Interactive Essay</h1>
+  </div>
+
+
+  
+  <div class="main">
+    <h3>
+      Component 2: Mouse Interaction
+    </h3>
+
+    <p>
+      The mouse and pointer are significant components of the WIMP interface because they provide a more natural and intuitive way for users to interact with computers. Before the development of the WIMP interface, users had to interact with computers using text commands, which could be difficult and time-consuming, especially for non-technical users.
+    </p>
+
+    <p>
+      The mouse and pointer allow users to interact with the interface using visual cues and physical gestures, such as pointing, clicking, and dragging. This makes it easier for users to navigate through menus, select icons and buttons, and manipulate windows and files.
+    </p>
+
+    <p>
+      David Navarre and other researchers introduced a measurement to break down and reconceptualize the mouse interactions, which is called the User Interface Description Language. They break down the interaction into the raw events, higher-level events and the reaction of graphic components. For example, "the sequence of (up, down, up, down) events would be composed in a doubleclick event, provided that the input device has not been moved and that the total time for that sequence is smaller than a given threshold. (Navarre et.al 185)
+    </p>
+
+    <img src="assets/ICO.jpeg" alt="ICO" width="200px" class="center">
+
+    <p>
+      Here's my demonstraction of how to convert the mouse's raw event (down, move up) into a higher-level event (mouseDragged) and finally reflect on the graphical interface.
+    </p>
+
+
+
+    <div id="p5-drag"></div>
+  </div>
+
+ 
+
+
+
+  <div class="prev">
+    <a href="components1window.html">previous page</a>
+  </div>
+
+  <div class="next">
+    <a href="components3copy.html">next page</a>
+  </div>
+  
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Background Color</title>
+	<style>
+		body {
+			background-color: #000000; /* set default background color */
+		}
+	</style>
+</head>
+<body>
+	<script>
+		// generate random color
+		var randomColor = Math.floor(Math.random()*16777215).toString(16);
+		
+		// set background color
+		document.body.style.backgroundColor = "#" + randomColor;
+	</script>
+
+    
+</body>
+</html>

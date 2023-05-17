@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+
+  <!-- link the styles -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- import the libraries -->
+
+
+  <!-- import my script (it is deferred!) -->
+
+  <style>
+    .btn {
+      font-family: 'Raleway', sans-serif;
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="bar">
+    <h1 class="HHCI">HHCI Interactive Essay</h1>
+  </div>
+
+
+  <div class="main">
+    <h3>
+      Component 1: Overlapping Windows
+    </h3>
+    <button class="btn" ; onclick="openNewWindow()">Click me to create cascading windows!</button><br>
+    <p> </p>
+    <button class="btn" ; onclick="openNewWindow2()">Click me to create randomly positioned windows!</button>
+    <p> </p>
+  </div>
+
+  <div class="main">
+    <p>
+      A window is a rectangular area on the screen that displays the content of an application or file. Multiple windows can be open and arranged on the screen at the same time, allowing users to multitask and switch between different applications and files. Different types of windows include tiled windows, overlapping windows, cascading windows and so on.
+    </p>
+
+    <p>
+      Back in the era of Xerox and Apple, people are able to move, resize, scroll up and down, and organize the overlapping hierarchy of the windows. The significance of windows in the WIMP interface is that they allow users to multitask and work on multiple applications or files simultaneously. By using windows, users can arrange and view multiple applications or files on their screen at the same time, switch between them easily, and interact with them independently.
+    </p>
+
+    <p>
+      Windows also provide a visual representation of the content of an application or file, which makes it easier for users to understand and manipulate the content. For example, a document window displays the content of a text document in a way that is easy to read and edit. An image editing application can display an image in a window, allowing users to manipulate it using tools and options.
+    </p>
+  
+  
+  </div>
+
+
+
+  <script>
+    function openNewWindow() {
+      for (let i = 0; i < 5; i++) {
+        const newWindow = window.open("window.html", "_blank", "width=400,height=457");
+        // newWindow.moveTo(Math.floor(Math.random() * newWindow.screen.width),
+        //   Math.floor(Math.random() * newWindow.screen.height));
+        newWindow.moveTo(100 + i * 50, 100 + i * 50);
+      }
+    }
+
+
+    function openNewWindow2() {
+      for (let i = 0; i < 5; i++) {
+        const newWindow = window.open("window.html", "_blank", "width=200,height=200");
+        newWindow.moveTo(Math.floor(Math.random() * newWindow.screen.width),
+          Math.floor(Math.random() * newWindow.screen.height));
+      }
+    }
+  </script>
+
+
+
+
+  <div class="prev">
+    <a href="history.html">previous page</a>
+  </div>
+
+  <div class="next">
+    <a href="components2drag.html">next page</a>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

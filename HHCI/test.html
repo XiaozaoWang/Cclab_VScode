@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy and Paste Example</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		form {
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		input[type="text"], input[type="submit"] {
+			padding: 10px;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			border: none;
+			font-size: 16px;
+		}
+		
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			cursor: pointer;
+		}
+		
+		#output {
+			margin-top: 50px;
+			display: none;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<form onsubmit="event.preventDefault(); showOutput();">
+		<label for="textbox">Copy the text:</label>
+		<textarea id="textbox" rows="5" readonly>Larry Tesler</textarea>
+		<label for="inputbox">Paste here!</label>
+		<input type="text" id="inputbox" placeholder="Paste text here">
+		<input type="submit" value="Submit">
+	</form>
+	
+	<div id="output"></div>
+	
+	<script>
+		function showOutput() {
+			// get the values from the text box and input box
+			var text = document.getElementById("textbox").value;
+			var input = document.getElementById("inputbox").value;
+			
+			// check if the input matches the text
+			if (input === text) {
+				// display success message
+				document.getElementById("output").innerHTML = "<p>Success! The input matches the text.</p>";
+				document.getElementById("output").style.display = "block";
+			} else {
+				// display error message
+				document.getElementById("output").innerHTML = "<p>Error! The input does not match the text.</p>";
+				document.getElementById("output").style.display = "block";
+			}
+		}
+	</script>
+</body>
+</html>

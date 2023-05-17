@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  /* we can have multiple canvas */
+}
+
+.bar {
+  position: inherit;
+  margin: 10px;
+  padding: 10px;
+  background: linear-gradient(to right, #0066ff 0%, #66ffcc 100%);
+  /* background-color: aqua; */
+}
+
+
+.HHCI {
+  color:azure;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+
+.author {
+  margin: 20px;
+}
+
+.main {
+  position:relative;
+  margin: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: bisque;
+  background-color: aliceblue;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+
+
+#p5-drag {
+  position: relative;
+  margin: auto;
+  width: 30%;
+  border-width: 2px;
+  border-style: dotted;
+  z-index: -1;
+}
+
+
+.prev {
+  position: fixed;
+  bottom: 0px;
+  margin: 20px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  background-color: gold;
+}
+
+.next {
+  position: fixed;
+  right: 10px;
+  bottom: 0px;
+  margin: 20px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  background-color: gold;
+}
+
+
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.description {
+  font-size: 16px;
+  text-align: center;
+}
