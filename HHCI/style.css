@@ -19,7 +19,7 @@ canvas {
 
 
 .HHCI {
-  color:azure;
+  color: azure;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -31,7 +31,7 @@ canvas {
 }
 
 .main {
-  position:relative;
+  position: relative;
   margin: 30px;
   padding-left: 150px;
   padding-right: 150px;
@@ -93,4 +93,9 @@ a:hover {
 .description {
   font-size: 16px;
   text-align: center;
+}
+
+#ending {
+  color: green;
+  font-family: 'Raleway', sans-serif;
 }
